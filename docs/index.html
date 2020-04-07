@@ -2,65 +2,139 @@
 <html lang="en">
     
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"
-        />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <link rel="icon" href="" />
         <link rel="stylesheet" href="css/style.css" />
-        <link rel="icon" href="./img/icon.png" />
-        <title>Basic - Bootstrap 4 with Gulp 4</title>
+        <!-- <script defer src="/node_modules/swup/dist/swup.min.js"></script> -->
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-<a class="navbar-brand" href="./index.html">Basic</a>
-            <button class="navbar-toggler"
-            type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu"
-                        aria-labelledby="dropdown01"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
+        <header class="header-container">
+             <h1 id="logo">LOGO</h1>
+            <nav>
+                <ul>
+                    <li class="dropdown"> <a href="#" class="active-link dropdown-toggle" role="button" id="dropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                        <div
+                        class="dropdown-menu" aria-labelledby="dropdownMenuLink"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
                             <a
                             class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                                </div>
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./about.html">About</a>
+                    <li><a href="#">Discovery</a>
+
+                    </li>
+                    <li><a href="#">Photos</a>
+
+                    </li>
+                    <li><a href="#">Contact</a>
+
+                    </li>
+                    <li>
+                        <button>
+                            <img src="../img/christopher-campbell-28567-unsplash@2x.png" alt="">
+                        </button>
                     </li>
                 </ul>
-            </div>
-        </nav>
-        <div class="jumbotron bg-white text-center justify-content-center align-items-center mb-0">
-            <div class="container">
-                 <h1 class="display-3">Boilerplate Bootstrap 4+  with Gulp 4 </h1>
-                <p class="lead">Basic is a Bootstrap 4+ boilerplate with Gulp4, cross-env, Sass, sourcemaps,
-                    concat, CSS & HTML minification, uglify, image optimization, template partials,
-                    BrowserSync.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a>
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365451-d20e00c0ed23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            </nav>
+        </header>
+        <main>
+            <section class="world-news">
+                <div class="world-news_bg"></div>
+            </section>
+            <section class="trending">
+                <div class="container">
+                    <div class="trending_arrows">
+                         <h2>TRENDING</h2>
+                        <div class="arrows"> <a href="" id="arrow-left_trending"><img src="./img/arrow back@2x.png" alt="arrow-left"></a>
+                            <a
+                            href="" id="arrow-right_trending">
+                                <img src="./img/arrow@2x.png" alt="arrow-right">
+                                </a>
+                        </div>
+                    </div>
+                    <div class="trending_carousel grid-container">
+                        <div class="card">
+                            <img src="./img/trending-card1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                 <h5 class="card-title">Dolore magna aliqua</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, ipsum labitur</p>
+                                <p>
+                                    <img src="./img/time@2x.png" alt="time">2m ago</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/trending-card2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                 <h5 class="card-title">Morbi eleifend a libero</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, ipsum labitur</p>
+                                <p>
+                                    <img src="./img/time@2x.png" alt="time">2m ago</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/trending-card3.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                 <h5 class="card-title">Morbi eleifend a libero</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, ipsum labitur</p>
+                                <p>
+                                    <img src="./img/time@2x.png" alt="time">2m ago</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/trending-card1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                 <h5 class="card-title">Dolore magna aliqua</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, ipsum labitur</p>
+                                <p>
+                                    <img src="./img/time@2x.png" alt="time">2m ago</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365437-9f9d275b0db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579033060982-1bb5b083f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-            </div>
-        </div>
-        <footer class="footer container text-center">
-            <p>&copy; Bootstrap Basic Starter with Gulp</p>
-        </footer>
+            </section>
+        </main>
+        <footer class="footer container text-center"></footer>
+        <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script> -->
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+        <script>
+            $('.trending_carousel').slick({
+              dots: false,
+              infinite: false,
+              // autoplay: true,
+              speed: 300,
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              prevArrow: '#arrow-left_trending',
+              nextArrow: '#arrow-right_trending',
+              responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+              ]
+            });
+        </script>
         <script src="js/all.js"></script>
     </body>
 

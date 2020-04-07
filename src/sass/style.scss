@@ -1,16 +1,92 @@
-$theme-colors: (
-    "primary": #ff3a52,
-    "dark": #000000
-);
-
+// $theme-colors: (
+//     "primary": #FA6980,
+//     "dark": #000000
+// );
 @import "node_modules/bootstrap/scss/bootstrap";
 
-body {
-    padding-top:56px;
+*{
+    margin: 0;
+    padding: 0;
 }
-.footer {
-    margin-top:3rem;
+body{
+    background-color: #F6F8F9;
 }
-.navbar {
-    border-bottom:1px solid #eee;
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+header{
+    padding: 19px 0;
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    #logo{
+        font-size: 16px;
+        color: #FA6980;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1;
+    }
+    nav{
+        ul{
+            display: flex;
+            align-items: center;
+            margin: 0;
+            line-height: 1;
+
+            li{
+                margin-left: 25px;
+                a{
+                    text-transform: uppercase;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #343638;
+                    opacity: 0.5;
+                    line-height: 1;
+
+                }
+                a.active-link{
+                    opacity: 1;
+                }
+                button{
+                    background: none;
+                    border: none;
+                    opacity: 1;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+section.trending{
+    .trending_arrows{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0;
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+            margin: 0;
+        }
+        .arrows{
+            a{
+                text-decoration: none;
+                margin-left: 50px;
+            }
+        }
+    }
+    .trending_carousel.grid-container{
+        width: 100%; 
+        .card{display: inline-block;} 
+    }
 }
