@@ -8,60 +8,303 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="icon" href="./img/icon.png" />
-        <title>Basic - Bootstrap 4 with Gulp 4</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>News Kit</title>
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-<a class="navbar-brand" href="./index.html">Basic</a>
-            <button class="navbar-toggler"
-            type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"> <a class="nav-link" href="./index.html">Home<span class="sr-only">(current)</span></a>
+        <header>
+             <h1>LOGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a>
+
                     </li>
-                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu"
-                        aria-labelledby="dropdown01"> <a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a>
-                            <a
-                            class="dropdown-item" href="#">Something else here</a>
-                        </div>
+                    <li><a href="">Discovery</a>
+
                     </li>
-                    <li class="nav-item"> <a class="nav-link" href="./about.html">About</a>
+                    <li><a href="">Photos</a>
+
+                    </li>
+                    <li><a href="">Contact</a>
+
+                    </li>
+                    <li>
+                        <button>
+                            <img src="../img/header-avatar.png" alt="avatar">
+                        </button>
                     </li>
                 </ul>
-            </div>
-        </nav>
-        <div class="jumbotron bg-white text-center justify-content-center align-items-center mb-0">
-            <div class="container">
-                 <h1 class="display-3">Boilerplate Bootstrap 4+  with Gulp 4 </h1>
-                <p class="lead">Basic is a Bootstrap 4+ boilerplate with Gulp4, cross-env, Sass, sourcemaps,
-                    concat, CSS & HTML minification, uglify, image optimization, template partials,
-                    BrowserSync.</p>
-                <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a>
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365451-d20e00c0ed23?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            </nav>
+        </header>
+        <main>
+            <section class="world-news">
+                <div class="world-news_background">
+                    <div class="world-news_container">
+                        <div>
+                             <h2>World news</h2>
+                            <hr>
+                             <h2>Amazing places in America to visit.</h2>
+                            <p>For some reason — this country, this city, this neighborhood, this particular
+                                street —  is the place you are living a majority of your life in.</p>
+                            <button
+                            class="btn btn-primary red-button">Learn more</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579032365437-9f9d275b0db0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+                <div class="more-news">
+                    <div class="more-news_container">
+                        <div class="more-news_header">
+                             <h2>More news</h2>
+                            <ul class="chevrons">
+                                <li><a href=""><i class="fa fa-chevron-left" style="color: #202124; opacity: 30%; font-size: 14px;" aria-hidden="true"></i></a>
+                                </li>
+                                <li><a href=""><i class="fa fa-chevron-right" style="color: #202124; font-size: 14px;" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="more-news_body">
+                            <div class="more-news_body--item">
+                                 <h3 class="mn_title">Travel</h3>
+                                 <h3>Article title</h3>
+                                <p>Lorem ipsum dolor sit amet, ipsum labitur lucilius mel</p>
+                                <p>
+                                    <img src="./img/time@2x.png" alt="">2 min ago</p>
+                            </div>
+                            <div class="more-news_body--item">
+                                 <h3 class="mn_title">Technology</h3>
+                                 <h3>Article title</h3>
+                                <p>Lorem ipsum dolor sit amet, ipsum labitur lucilius mel</p>
+                                <p>
+                                    <img src="./img/time@2x.png" alt="">2 min ago</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1579033060982-1bb5b083f4fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+            </section>
+            <section id="trending">
+                <div class="container1">
+                    <div class="trending_header section_header">
+                         <h2>Trending</h2>
+                        <ul class="chevrons">
+                            <li><i id="trending_prevArrow" class="fa fa-chevron-left" style="color: #202124; opacity: 30%; font-size: 14px;"
+                                aria-hidden="true"></i>
+                            </li>
+                            <li><i id="trending_nextArrow" class="fa fa-chevron-right" style="color: #202124; font-size: 14px;"
+                                aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="trending_carousel">
+                        <div class="card">
+                            <img src="./img/trending-card1.png" class="card-img-top" alt="img">
+                            <div class="card-body">
+                                 <h5 class="card-title">Dolore magna aliqua</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, ipsum labitur</p>
+                                <p class="card-text">
+                                    <img src="./img/time@2x.png" alt=""><small class="text-muted">2m ago</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/trending-card2.png" class="card-img-top" alt="imh">
+                            <div class="card-body">
+                                 <h5 class="card-title">Morbi eleifend a libero</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, ipsum labitur</p>
+                                <p class="card-text">
+                                    <img src="./img/time@2x.png" alt=""><small class="text-muted">1h ago</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/trending-card3.png" class="card-img-top" alt="img">
+                            <div class="card-body">
+                                 <h5 class="card-title">Morbi eleifend a libero</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, ipsum labitur</p>
+                                <p class="card-text">
+                                    <img src="./img/time@2x.png" alt=""><small class="text-muted">3h ago</small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="./img/trending-card2.png" class="card-img-top" alt="imh">
+                            <div class="card-body">
+                                 <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                    content.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <footer class="footer container text-center">
-            <p>&copy; Bootstrap Basic Starter with Gulp</p>
+            </section>
+            <section id="happening-now">
+                <div class="container1">
+                    <div class="happening-now_header section_header">
+                         <h2>happening now</h2>
+                        <ul class="chevrons">
+                            <li><i id="trending_prevArrow" class="fa fa-chevron-left" style="color: #202124; opacity: 30%; font-size: 14px;"
+                                aria-hidden="true"></i>
+                            </li>
+                            <li><i id="trending_nextArrow" class="fa fa-chevron-right" style="color: #202124; font-size: 14px;"
+                                aria-hidden="true"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="happening-now_container">
+                        <div class="happening-now_big-items">
+                            <article class="city-bg">
+                                <div class="city-bg_container">
+                                     <h3>city</h3>
+                                    <div>
+                                         <h3>Large article title</h3>
+                                        <p>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto,
+                                            vidit vituperatoribus duo</p>
+                                        <p class="card-text">
+                                            <img src="./img/time@2x.png" alt=""><small class="text-muted">3h ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="travel-bg">
+                                <div class="travel-bg_container">
+                                     <h3>travel</h3>
+                                    <div>
+                                         <h3>Large article title</h3>
+                                        <p>Lorem ipsum dolor sit amet, in eam odio amet, vix id nullam detracto,
+                                            vidit vituperatoribus duo</p>
+                                        <p class="card-text">
+                                            <img src="./img/time@2x.png" alt=""><small class="text-muted">3h ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <aside class="happening-now_small-items">
+                            <div class="small-card">
+                                <img src="./img/elefanti.png" alt="">
+                                 <h4>Small title</h4>
+                                <p class="card-text">
+                                    <img src="./img/time@2x.png" alt=""><small class="text-muted">3h ago by <a href="">Worldnews</a></small>
+                                </p>
+                            </div>
+                            <div class="small-card">
+                                <img src="./img/papagalli.png" alt="">
+                                 <h4>Small title</h4>
+                                <p class="card-text">
+                                    <img src="./img/time@2x.png" alt=""><small class="text-muted">4h ago by <a href="">Days</a></small>
+                                </p>
+                            </div>
+                            <div class="small-card">
+                                <img src="./img/curved-street.png" alt="">
+                                 <h4>Small title</h4>
+                                <p class="card-text">
+                                    <img src="./img/time@2x.png" alt=""><small class="text-muted">3h ago by <a href="">Monica</a></small>
+                                </p>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container1">
+                <div class="footer_header">
+                     <h1>LOGO</h1>
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a>
+
+                            </li>
+                            <li><a href="">Discovery</a>
+
+                            </li>
+                            <li><a href="">Photos</a>
+
+                            </li>
+                            <li><a href="">Contact</a>
+
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href="">About</a>
+
+                            </li>
+                            <li><a href="">Help</a>
+
+                            </li>
+                            <li><a href="">Terms</a>
+
+                            </li>
+                            <li><a href="">Guidlines</a>
+
+                            </li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Testimonials</a>
+
+                            </li>
+                            <li><a href="">Advertise</a>
+
+                            </li>
+                            <li><a href="">Integrations</a>
+
+                            </li>
+                            <li><a href="">Careers</a>
+
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <div>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email" aria-label="Email"
+                            aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">
+                                    <img src="../img/send@2x.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <p>Stay in touch with us for the freshest products!</p>
+                    </div>
+                    <ul>
+                        <li><a href=""><img src="../img/instagram@2x.png" alt=""></a>
+
+                        </li>
+                        <li><a href=""><img src="../img/twitter@2x.png" alt=""></a>
+
+                        </li>
+                        <li><a href=""><img src="../img/facebook@2x.png" alt=""></a>
+
+                        </li>
+                        <li><a href=""><img src="../img/web@2x.png" alt=""></a>
+
+                        </li>
+                    </ul>
+                </div>
         </footer>
         <script src="js/all.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                    $('.trending_carousel').slick({
+                    slidesToShow: 3,
+                    slitesToScroll: 1,
+                    dots:false,
+                    infinite: false,
+                    prevArrow: $('#trending_prevArrow'),
+                    nextArrow: $('#trending_nextArrow'),
+                    adaptiveHeight: false,
+                    // centerMode: true,
+                    centerPadding: '0px'
+              });
+            });
+        </script>
     </body>
 
 </html>

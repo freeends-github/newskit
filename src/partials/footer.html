@@ -1,6 +1,63 @@
-<footer class="footer container text-center">
-    <p>&copy; Bootstrap Basic Starter with Gulp</p>
+<footer>
+    <div class="container1">
+        <div class="footer_header">
+            <h1>LOGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Discovery</a></li>
+                    <li><a href="">Photos</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Terms</a></li>
+                    <li><a href="">Guidlines</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Advertise</a></li>
+                    <li><a href="">Integrations</a></li>
+                    <li><a href="">Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <div>    
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="../img/send@2x.png" alt=""></button>
+                    </div>
+                </div>
+                <p>Stay in touch with us for the freshest products!</p>
+            </div>
+            <ul>
+                <li><a href=""><img src="../img/instagram@2x.png" alt=""></a></li>
+                <li><a href=""><img src="../img/twitter@2x.png" alt=""></a></li>
+                <li><a href=""><img src="../img/facebook@2x.png" alt=""></a></li>
+                <li><a href=""><img src="../img/web@2x.png" alt=""></a></li>
+            </ul>
+        </div>
 </footer>
 <script src="js/all.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://kenwheeler.github.io/slick/slick/slick.js"></script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.trending_carousel').slick({
+            slidesToShow: 3,
+            slitesToScroll: 1,
+            dots:false,
+            infinite: false,
+            prevArrow: $('#trending_prevArrow'),
+            nextArrow: $('#trending_nextArrow'),
+            adaptiveHeight: false,
+            // centerMode: true,
+            centerPadding: '0px'
+      });
+    });
+</script>
 </body>
 </html>
