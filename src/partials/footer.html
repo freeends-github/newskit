@@ -1,5 +1,5 @@
 <footer>
-    <div class="container1">
+    <div class="container">
         <div class="footer_header">
             <h1>LOGO</h1>
             <nav>
@@ -55,7 +55,26 @@
             nextArrow: $('#trending_nextArrow'),
             adaptiveHeight: false,
             // centerMode: true,
-            centerPadding: '0px'
+            centerPadding: '0px',
+            responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 601,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
       });
     });
 </script>

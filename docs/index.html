@@ -13,11 +13,10 @@
     </head>
     
     <body>
-        <header>
-             <h1>LOGO</h1>
+        <header> <a href="../index.html"><h1>LOGO</h1></a>
             <nav>
                 <ul>
-                    <li><a href="">Home</a>
+                    <li><a href="" id="active-link-nav">Home</a>
 
                     </li>
                     <li><a href="">Discovery</a>
@@ -37,7 +36,7 @@
                 </ul>
             </nav>
         </header>
-        <main>
+        <main class="transition-fade">
             <section class="world-news">
                 <div class="world-news_background">
                     <div class="world-news_container">
@@ -47,8 +46,8 @@
                              <h2>Amazing places in America to visit.</h2>
                             <p>For some reason — this country, this city, this neighborhood, this particular
                                 street —  is the place you are living a majority of your life in.</p>
-                            <button
-                            class="btn btn-primary red-button">Learn more</button>
+                            <a
+                            href="learn-more.html" class="btn btn-primary red-button">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -84,7 +83,7 @@
                 </div>
             </section>
             <section id="trending">
-                <div class="container1">
+                <div class="container">
                     <div class="trending_header section_header">
                          <h2>Trending</h2>
                         <ul class="chevrons">
@@ -141,7 +140,7 @@
                 </div>
             </section>
             <section id="happening-now">
-                <div class="container1">
+                <div class="container">
                     <div class="happening-now_header section_header">
                          <h2>happening now</h2>
                         <ul class="chevrons">
@@ -197,7 +196,7 @@
                                     <img src="./img/time@2x.png" alt=""><small class="text-muted">4h ago by <a href="">Days</a></small>
                                 </p>
                             </div>
-                            <div class="small-card">
+                            <div class="small-card last-card">
                                 <img src="./img/curved-street.png" alt="">
                                  <h4>Small title</h4>
                                 <p class="card-text">
@@ -210,7 +209,7 @@
             </section>
         </main>
         <footer>
-            <div class="container1">
+            <div class="container">
                 <div class="footer_header">
                      <h1>LOGO</h1>
                     <nav>
@@ -301,7 +300,26 @@
                     nextArrow: $('#trending_nextArrow'),
                     adaptiveHeight: false,
                     // centerMode: true,
-                    centerPadding: '0px'
+                    centerPadding: '0px',
+                    responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 601,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
               });
             });
         </script>
