@@ -77,6 +77,24 @@
   ]
       });
     });
+
+//toggle menu
+
+$(window).on("resize", function() {
+		if($(window).width() > 1660) {
+			if($(".menu_class").hasClass("showmenu")) {
+				$(".menu_class").removeClass("showmenu");
+			}
+		}
+	}).trigger("resize");
+
+	$(window).on("resize",function(){
+		if($(window).width()<950){
+
+		}
+	})
+
+
 </script>
 </body>
 </html>

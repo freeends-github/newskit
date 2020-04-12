@@ -247,11 +247,11 @@ main.wn{
 }
 @media only screen and (max-width:767px){}
 @media only screen and (max-width: 600px){
-  .container{
-    width: 90% !important;
-    max-width: 90%;
-    margin: 0 auto;
-  }
+  // .container{
+  //   width: 90% !important;
+  //   max-width: 900px !important;
+  //   margin: 0 auto;
+  // }
   .mid-body{
     display: flex;
     flex-direction: column;

@@ -11,13 +11,53 @@
   </head>
 <body>
     <header>
+      <div class="toggled-menu">
+        <div class="wh-tm">  
+          <a href="../index.html"><h1>LOGO</h1></a>
+          <ul class="tm-ul-st">
+            <li><a href=""><img src="../img/home@2x.png" alt="">Home</a></li>
+            <li><a href=""><img src="../img/discover@2x.png" alt=""> Discovery</a></li>
+            <li><a href=""><img src="../img/photos@2x.png" alt=""> Photos</a></li>
+            <li><a href=""><img src="../img/mail@2x.png" alt=""> Contact</a></li>
+            <li><a href=""><img src="../img/header-avatar.png" alt="avatar">  Profile</a></li>
+          </ul>
+        </div>
+        <div class="footer_toggled-menu">
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Guidlines</a></li>
+          </ul>
+          <ul>
+            <li><a href="">Testimonials</a></li>
+            <li><a href="">Advertise</a></li>
+            <li><a href="">Integrations</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+          <ul class="soc-med">
+            <li><a href=""><img src="../img/instagram@2x.png" alt=""></a></li>
+            <li><a href=""><img src="../img/twitter@2x.png" alt=""></a></li>
+            <li><a href=""><img src="../img/facebook@2x.png" alt=""></a></li>
+            <li><a href=""><img src="../img/web@2x.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+        <button id="toggle-menu"><img src="../img/menu icon@2x.png" alt=""></button>
         <a href="../index.html"><h1>LOGO</h1></a>
         <nav>
             <ul>
-                <li><a href="" id="active-link-nav">Home</a></li>
-                <li><a href="">Discovery</a></li>
-                <li><a href="">Photos</a></li>
-                <li><a href="">Contact</a></li>
+                <li class="none dropdown">
+                  <a href="" id="active-link-nav" class="dropbtn">Home</a>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </li>
+                <li class="none"><a href="">Discovery</a></li>
+                <li class="none"><a href="">Photos</a></li>
+                <li class="none"><a href="">Contact</a></li>
                 <li><button><img src="../img/header-avatar.png" alt="avatar"></button></li>
             </ul>
         </nav>

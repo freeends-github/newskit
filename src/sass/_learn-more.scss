@@ -50,12 +50,13 @@ section.wide-background{
       justify-content: space-between;
       height: 50%;
       padding: 40px;
+      img{
+        margin-right: 20px;
+      }
       h2{
+        display: inline-block;
         font-size: 18px;
         font-weight: 700;
-        span{
-          margin-right: 20px;
-        }
       }
       a{
         border: 2px dashed rgba($color: #fff, $alpha: 0.5);
@@ -193,18 +194,11 @@ section.about-section{
       aside{
         width: 100%;
         flex-direction: row;
-        &>div{width: 48%}
-        // h3{
-        //   margin-top: 50px;
-        //   border-top: 2px dashed #ebeded;
-        //   padding-top: 60px;
-        //   font-size: 18px;
-        //   font-weight: 700;
-        //   text-transform: capitalize;
-        // }
+        &>div.col-count{column-count:2; column-gap: 40px;}
       }
       .posts{
         width: 100%;
+        margin-top: 50px;
         padding-top: 50px;
         padding-left: 0;
         border-left: none;
@@ -235,10 +229,19 @@ section.about-section{
             font-size: 25px;
           }
           div{
+            display: flex;
             h2{
-              font-size: 17px;
+              font-size: 16px;
+              text-transform: uppercase;
+              font-weight: 700;
+              span{
+                margin-right: 10px;
+              }
             }
-        }
+            h2:last-of-type{
+              padding-left: 70px;
+            }
+          }
         }
       }
       .bott-items{
@@ -264,8 +267,8 @@ section.about-section{
       aside{
         width: 100%;
         flex-direction: column;
-        &>div{width: 100%}
-        &>div:last-child{
+        &>div.col-count{width: 100%; column-count:1;}
+        &>p.card-text,.text-muted,img, h3{
           display: none;
         }
       }

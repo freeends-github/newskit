@@ -13,19 +13,88 @@
     </head>
     
     <body>
-        <header> <a href="../index.html"><h1>LOGO</h1></a>
+        <header>
+            <div class="toggled-menu">
+                <div class="wh-tm"> <a href="../index.html"><h1>LOGO</h1></a>
+                    <ul class="tm-ul-st">
+                        <li><a href=""><img src="../img/home@2x.png" alt="">Home</a>
+
+                        </li>
+                        <li><a href=""><img src="../img/discover@2x.png" alt=""> Discovery</a>
+
+                        </li>
+                        <li><a href=""><img src="../img/photos@2x.png" alt=""> Photos</a>
+
+                        </li>
+                        <li><a href=""><img src="../img/mail@2x.png" alt=""> Contact</a>
+
+                        </li>
+                        <li><a href=""><img src="../img/header-avatar.png" alt="avatar">  Profile</a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_toggled-menu">
+                    <ul>
+                        <li><a href="">About</a>
+
+                        </li>
+                        <li><a href="">Help</a>
+
+                        </li>
+                        <li><a href="">Terms</a>
+
+                        </li>
+                        <li><a href="">Guidlines</a>
+
+                        </li>
+                    </ul>
+                    <ul>
+                        <li><a href="">Testimonials</a>
+
+                        </li>
+                        <li><a href="">Advertise</a>
+
+                        </li>
+                        <li><a href="">Integrations</a>
+
+                        </li>
+                        <li><a href="">Careers</a>
+
+                        </li>
+                    </ul>
+                    <ul class="soc-med">
+                        <li><a href=""><img src="../img/instagram@2x.png" alt=""></a>
+
+                        </li>
+                        <li><a href=""><img src="../img/twitter@2x.png" alt=""></a>
+
+                        </li>
+                        <li><a href=""><img src="../img/facebook@2x.png" alt=""></a>
+
+                        </li>
+                        <li><a href=""><img src="../img/web@2x.png" alt=""></a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button id="toggle-menu">
+                <img src="../img/menu icon@2x.png" alt="">
+            </button> <a href="../index.html"><h1>LOGO</h1></a>
             <nav>
                 <ul>
-                    <li><a href="" id="active-link-nav">Home</a>
+                    <li class="none dropdown"> <a href="" id="active-link-nav" class="dropbtn">Home</a>
+                        <div class="dropdown-content"> <a href="#">Link 1</a> <a href="#">Link 2</a> <a href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="none"><a href="">Discovery</a>
 
                     </li>
-                    <li><a href="">Discovery</a>
+                    <li class="none"><a href="">Photos</a>
 
                     </li>
-                    <li><a href="">Photos</a>
-
-                    </li>
-                    <li><a href="">Contact</a>
+                    <li class="none"><a href="">Contact</a>
 
                     </li>
                     <li>
@@ -49,9 +118,12 @@
                         </div>
                     </div>
                     <div class="bott-items">
-                         <h2><span><img src="./img/lm-avatar.png" alt=""></span>by Steven Voorhes</h2> <a href="world-news.html">
+                        <div>
+                            <img src="./img/lm-avatar.png" alt="">
+                            <h2>by Steven Voorhes</h2>
+                        </div> <a href="world-news.html">
 
-          <h3>Next story</h3>
+          <h3>Kliko Ketu!</h3>
 
           <h4>Morbi eleifend a libero</h4>
 
@@ -66,7 +138,7 @@
             <section class="about-section">
                 <div class="container">
                     <aside>
-                        <div>
+                        <div class="col-count">
                              <h2>Quisque viverra</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sodales primis,
                                 mollis viverra conubia ligula inceptos laoreet libero tortor, nascetur
@@ -81,8 +153,6 @@
                                 curae quis quisque, nunc duis ac at elementum dui integer viverra tempus.
                                 Lacinia bibendum diam senectus egestas nec molestie convallis aenean hac
                                 tempus, vivamus purus congue euismod fringilla</p>
-                        </div>
-                        <div>
                              <h3>small title - subtitle</h3>
                             <p class="card-text">
                                 <img src="./img/time@2x.png" alt=""><small class="text-muted">3h ago by <a href="">Worldnews</a></small>
@@ -234,6 +304,22 @@
           ]
               });
             });
+        
+        //toggle menu
+        
+        $(window).on("resize", function() {
+        		if($(window).width() > 1660) {
+        			if($(".menu_class").hasClass("showmenu")) {
+        				$(".menu_class").removeClass("showmenu");
+        			}
+        		}
+        	}).trigger("resize");
+        
+        	$(window).on("resize",function(){
+        		if($(window).width()<950){
+        
+        		}
+        	})
         </script>
     </body>
 
